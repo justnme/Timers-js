@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  transition: all 0.5s ease;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.logo {
+  margin: auto auto auto auto;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+h1 {
+  display: inline;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+#timeInput {
+  margin-bottom: 20px;
+}
+
+.clock-block {
+  display: block;
+  align-items: center;
+  background-color: #fff;
+  border-top: #333 2px solid;
+  border-bottom: #333 2px solid;
+  margin: auto auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0.2, 0.2, 0.2, 0.3);
+
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: inline-flex;
+
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #173e68;
+}
+
+.onOffButton {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  .dateOutput {
+    margin-top: 15px;
+  }
+}

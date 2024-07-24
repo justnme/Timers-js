@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>House of Clocks and Timers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="dateOutput" class="dateOutput"></h1>
+    <h1>House of Clocks and Timers</h1>
+    <h1 id="timeOutput"></h1>
+  </header>
+
+  <main>
+    <!-- Alarm -->
+    <div class="clock-block">
+      <input type="datetime-local" id="alarmTime" placeholder="Alarm Date">
+      <button onclick="setAlarm()">Set Alarm</button>
+      <button onclick="cancelAlarm()">Cancel Alarms</button>
+      <audio id="alarmSound" src="spinnerspin.mp3" type="audio/mpeg"></audio>
+      <ul id="alarmList"></ul>
+    </div>
+
+    <!-- Timer -->
+    <div class="clock-block">
+      <input type="number" id="timerHours" placeholder="Timer Hours">
+      <input type="number" id="timerMinutes" placeholder="Timer Minutes">
+      <input type="number" id="timerSeconds" placeholder="Timer Seconds">
+      <button onclick="startTimer()">Start Timer</button>
+      <button id="stopTimerButton" onclick="stopTimer()">Stop Timer</button>
+      <div id="timerOutput"></div>
+    </div>
+
+    <!-- Stopwatch -->
+    <div class="clock-block">
+      <button onclick="startStopwatch()">Start Stopwatch</button>
+      <button id="stopStopwatchButton" onclick="stopStopwatch()">Stop Stopwatch</button>
+      <div id="stopwatchOutput"></div>
+    </div>
+  </main>
+</body>
+<script src="myjs.js"></script>
+
+</html>
